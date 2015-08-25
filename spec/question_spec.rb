@@ -12,12 +12,12 @@ describe(Question) do
   #   end
   # end
 
-  # describe("#survey_id") do
-  #   it("lets you read the survey ID out") do
-  #     test_question = Question.new({:description => "Do you like coffee?", :survey_id => 1})
-  #     expect(test_question.survey_id()).to(eq(1))
-  #   end
-  # end
+  describe("#survey_id") do
+    it("lets you read the survey ID out") do
+      test_question = Question.new({:description => "Do you like coffee?", :survey_id => 1})
+      expect(test_question.survey_id()).to(eq(1))
+    end
+  end
 
   describe("#survey") do
     it("tells which survey the question belongs to") do
